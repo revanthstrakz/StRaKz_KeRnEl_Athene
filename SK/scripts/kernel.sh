@@ -26,16 +26,16 @@ fi
 
 export DEVICE=$1;
 if [[ -z ${DEVICE} ]]; then
-    export DEVICE="mido";
+    export DEVICE="athene";
 fi
 
 export SRCDIR="${KERNELDIR}/${DEVICE}";
 export OUTDIR="${KERNELDIR}/out";
 export ANYKERNEL="${KERNELDIR}/SK/anykernel/";
-export ARCH="arm64";
-export SUBARCH="arm64";
+export ARCH="arm";
+export SUBARCH="arm";
 export TOOLCHAIN="${HOME}/LINARO/7.x";
-export DEFCONFIG="mido_defconfig";
+export DEFCONFIG="athene_defconfig";
 export ZIP_DIR="${KERNELDIR}/SK/files/";
 export IMAGE="${OUTDIR}/arch/${ARCH}/boot/Image.gz-dtb";
 
